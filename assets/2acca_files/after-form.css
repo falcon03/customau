@@ -1,0 +1,96 @@
+/*
+ * CSS for Accessible University Demo Site
+ * http://uw.edu/accesscomputing/AU
+ *
+ * after-form.css = Styles unique to inaccessible form
+ *    (shared form styles are in main.css)
+ */
+
+form h2 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+form input[type="email"] {
+  display: block;
+  width: 95%;
+}
+fieldset {
+  border: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+legend {
+  margin-left: 0;
+  font-weight: bold;
+}
+label { 
+  font-size: 1em;
+  line-height: 1em;
+  margin-bottom: 0.25em;
+  display: block;
+}
+#majors ul {
+  list-style-type: none;
+  display: block;
+	position: relative;
+	margin: 0;
+	padding-left: 1em;
+	width: 10em;
+}
+#majors ul li { 
+  line-height: 1.5em;
+}
+#majors ul label { 
+  display: inline;
+}
+#majors li input {
+  float: right;
+	position: absolute;
+	right: 0;
+}
+.required {
+  font-weight: bold;  
+}
+.required .star { 
+  color: #C00;
+  font-size: 2em;
+  display: inline-block;
+  vertical-align: middle; 
+}
+
+/*
+ *
+ * Text CAPTCHA
+ *
+ */
+#captcha legend { 
+  font-size: 1em;
+  line-height: 1em;
+}
+#captcha_label {
+  display: block;
+  margin: 0 0.25em 0.75em;
+  line-height: 1.35em;
+}
+#captcha p {
+  margin-top: 0.25em;
+}
+
+/*
+ *
+ * Error Message or other feedback
+ *
+ */
+#feedback {
+  background-color: #FFC;
+  font-weight: bold;
+  padding: 0.75em;
+  border: 1px solid #2A194C;
+  display: none;
+}
+#feedback h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+
