@@ -58,8 +58,8 @@
   height: 0;
   top: 30%;
   z-index: 20;
-  background-color: #24194C;
-  outline: 5px solid #539;
+/*  background-color: #24194C;
+  outline: 5px solid #539; */
 }
 #btn-prev {
   border-top: 40px solid transparent;

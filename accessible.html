@@ -11,12 +11,10 @@
 	<link href="assets/after-main.css" rel="stylesheet">
 	<link href="assets/after-menu.css" rel="stylesheet">
 	<link href="assets/after-form.css" rel="stylesheet">
-	<link href="assets/after-modal.css" rel="stylesheet">
 	<link href="assets/after-carousel.css" rel="stylesheet">
   <script src="assets/jquery.min.js"></script>
   <script src="assets/after-menu.js"></script>
 	<script src="assets/after-form.js"></script>
-	<script src="assets/after-modal.js"></script>
 	<script src="assets/after-carousel.js"></script>
 </head>
 <body>
@@ -28,15 +26,16 @@
         <a href="#main">Skip to main content</a>
       </div>
 	    <h1>
-  	    <img id="logo" src="images/au123456789.gif" alt="Accessible University" width="441" height="90">
+  	    <img id="logo" src="./assets/au123456789.gif" alt="Accessible University" width="441" height="90">
       </h1>
-      <nav id="AU-menu" aria-label="Demo site menu">
+<!--      <nav id="AU-menu" aria-label="Demo site menu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="after.html" aria-current="page">After</a></li>
           <li><a href="info.html">Info</a></li>
         </ul>
       </nav>  
+-->
     </header>
 
     <nav aria-label="Main Menu">
@@ -120,22 +119,22 @@
       <section id="carousel" aria-label="Slideshow" aria-roledescription="carousel">
         <div id="slides" aria-live="polite">
           <div class="slide" role="group" aria-roledescription="slide" aria-label="1 of 4">
-            <img src="images/carousel/slide1.jpg" 
+            <img src="./assets/slide1.jpg" 
               alt="An old brick building reflected in the glass exterior of a modern building">
             <div class="caption">A modern school</div>
           </div>
           <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 4">
-            <img src="images/carousel/slide2.jpg" 
+            <img src="./assets/slide2.jpg" 
               alt="An old brick building is covered in ivy">
             <div class="caption">rooted in its history</div>
           </div>
           <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 4">
-            <img src="images/carousel/slide3.jpg" 
+            <img src="./assets/slide3.jpg" 
               alt="In a library, a long wooden bookshelf sits beneath towering stone walls">
             <div class="caption">with opportunities to learn</div>
           </div>
           <div class="slide" role="group" aria-roledescription="slide" aria-label="4 of 4">
-            <img src="images/carousel/slide4.jpg" 
+            <img src="./assets/slide4.jpg" 
               alt="Students sitting on a green lawn beneath giant trees">
             <div class="caption">and grow.</div>
           </div>
@@ -168,29 +167,6 @@
           sugiere que AU puede ser una institución de bienvenida,
           el diseño inaccesible de esta página envía el mensaje opuesto.
 	      </p>
-      </div>
-
-      <div class="section">
-        <h2>Can you spot the barriers?</h2>
-        <p>This page is an improved version, with 22 accessibility issues corrected.
-          Details about all known issues are on the <a href="info.html">Info</a> page.
-          To see the original issues, consult the <a href="before.html">Inaccessible version</a>.
-          See also:
-        </p>
-        <!-- 
-          NOTE: The following button could have aria-haspopup="dialog" 
-          rather than an aria-label to inform screen reader users of what to expect 
-          However, as of Nov 2022: 
-            NVDA and JAWS both announce the button as a menu button if aria-haspopup is present 
-              JAWS even announces that it has a submenu 
-            VoiceOver on iOS says "Double tap to activate the picker" 
-          This has been an issue since at least 2019, and shows no signs of improving: 
-          https://github.com/w3c/aria/issues/1024
-        -->
-        <button type="button" id="openDialog" 
-          aria-label="Short list of accessibility issues, opens in a dialog">
-          Short list of accessibility issues
-        </button>
       </div>
 
       <div class="section">
@@ -322,9 +298,16 @@
         <div id="ccLogo">    
           <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
         </div>
-        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Accessible University</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://washington.edu/accesscomputing/AU" property="cc:attributionName" rel="cc:attributionURL">University of Washington</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+          <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Accessible University</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.unibo.it/sitoweb/vincenzo.rubano" property="cc:attributionName" rel="cc:attributionURL">Vioncenzo Rubano (University of Bologna)</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
       </div>
-      <p>This product was originally developed with support from the National Institute on Disability and Rehabilitation Research of the U.S. Department of Education (grant #H133D010306), and has been subsequently updated and maintained with support from the National Science Foundation (grants #CNS-0540615, CNS-0837508, CNS-1042260, CNS-1539179, and CNS-2137312). The contents do not necessarily represent the policies of the U.S. federal government, and you should not assume their endorsement.</p>
+      <p>This product is adapted from the <a href="http://washington.edu/accesscomputing/AU">original test by the University of Washington</a> with support from the 
+National Institute on Disability and Rehabilitation Research of the U.S.
+ Department of Education (grant #H133D010306), and has been subsequently
+ updated and maintained with support from the National Science 
+Foundation (grants #CNS-0540615, CNS-0837508, CNS-1042260, CNS-1539179, 
+and CNS-2137312). The contents do not necessarily represent the policies
+ of the U.S. federal government, and you should not assume their 
+endorsement.</p>
     </footer>
     
   </div><!--end #content-->
@@ -336,44 +319,5 @@
   <!--
   <div id="modalMask"></div>
   -->
-<dialog id="modalContent" aria-labelledby="modalHeading" aria-modal="true">
-  <h1 id="modalHeading">Accessibility Issues</h1>
-  <button value="cancel" id="modalClose" aria-label="Close dialog">x</button>
-  <ol>
-    <!-- Structure -->
-    <li>Missing landmark regions</li>
-    <li>No headings</li>
-    <li>Language not specified</li>
-    <!-- Images -->
-    <li>No alternate text on informative images</li>
-    <li>Missing or excessive alternate text on decorative images</li>
-    <!-- Color-->
-    <li>Insufficient color contrast</li>
-    <li>Color used to communicate information</li>
-    <!-- Keyboard-->
-    <li>Inaccessible keyboard interface</li>
-    <li>No visible indication of focus</li>
-    <li>No "skip to main content" link</li>
-    <!-- Links-->
-    <li>Redundant, uninformative link text</li>
-    <li>Links vs buttons</li>
-    <!-- Features -->
-    <li>Inaccessible navigation menu</li>
-    <li>Inaccessible carousel</li>
-    <li>Inaccessible modal dialog</li>
-    <!-- Forms -->
-    <li>Form not properly labeled</li>
-    <li>Inaccessible CAPTCHA</li>
-    <li>Inaccessible input validation</li>
-    <!-- Tables -->
-    <li>Missing accessible table markup</li>
-    <li>Missing abbreviation tags</li>
-    <!-- Video -->
-    <li>Inaccessible audio content in video</li>
-    <li>Inaccessible visual content in video</li>
-  </ol>
-  <button value="cancel" id="modalOk">OK</button>
-</dialog>
-
 </body>
 </html>
